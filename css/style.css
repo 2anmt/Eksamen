@@ -16,6 +16,9 @@ body {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
 
@@ -28,7 +31,6 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     font-size: 1.3rem;
-    font-weight: bold;
     overflow: auto;
 }
 
@@ -125,6 +127,7 @@ footer a:hover {
 .hero-content h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    
 }
 
 .hero-content p {
@@ -142,4 +145,24 @@ footer a:hover {
 
 .hero-button:hover {
     background-color: #FFD500;
+}
+
+.text-block {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-block{
+    flex: 1;
+    text-align: center;
+}
+
+.img{
+    height: auto;
+    width: 200px;
+}
+
+.section{
+    padding: 36px;
+    font-size: 1.2rem;
 }
