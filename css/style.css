@@ -189,12 +189,27 @@ footer a:hover {
     color: rgb(255, 255, 255);
 }
 
-.left h2 {
-    text-align:left;
-    padding: 40px;
+.spisesteder h2, h3 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.right h2 {
-    text-align:right;
-    padding: 40px;
+.spisesteder p {
+    text-align: center;
+    padding: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
+.andrea, .anna,.hanna, .eva, .aarstiden, .lars, .lillefri, .olaf, .fyrhuset {
+    text-align: center;
+    background-color: #c6c3b7;
+    padding: 20px;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+
+
+
