@@ -147,26 +147,6 @@ footer a:hover {
     background-color: #FFD500;
 }
 
-.kantine{
-    background-image: url('../media/kantine1.jpeg');
-    height: 400px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.kantine-content h1 {
-    text-decoration: overline;
-    text-decoration-color: #FFD500;
-    text-decoration-thickness: 2px;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: rgb(255, 255, 255);
-}
 
 .text-block {
     flex: 1;
@@ -186,4 +166,35 @@ footer a:hover {
 .section{
     padding: 36px;
     font-size: 1.2rem;
+}
+
+.kantine{
+    background-image: url('../media/dininghall.jpeg');
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kantine-content h1 {
+    text-decoration: overline;
+    text-decoration-color: #FFD500;
+    text-decoration-thickness: 2px;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.left h2 {
+    text-align:left;
+    padding: 40px;
+}
+
+.right h2 {
+    text-align:right;
+    padding: 40px;
 }
