@@ -168,6 +168,8 @@ footer a:hover {
     font-size: 1.2rem;
 }
 
+/*Katine*/
+
 .kantine{
     background-image: url('../media/dininghall.jpeg');
     opacity: 0.8;
@@ -207,7 +209,8 @@ footer a:hover {
 }
 
 
-.andrea, .anna,.hanna, .eva, .aarstiden, .lars, .lillefri, .olaf, .fyrhuset {
+.box {
+    flex-direction: column;
     text-align: center;
     background-color: #f9f0cc;
     padding: 20px;
@@ -215,6 +218,7 @@ footer a:hover {
     margin-right:30px;
     margin-top:50px;
     margin-bottom:50px;
+
 }
 
 .kantine-content, figcaption{
