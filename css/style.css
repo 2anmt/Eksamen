@@ -312,11 +312,15 @@ footer a:hover {
     opacity: 1;
 }
 
-.bygninger h2, h3 {
+.bygninger h2{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
-
+.bygninger h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+}
 .bygninger p {
     text-align: center;
     padding: 25px;
@@ -346,6 +350,6 @@ footer a:hover {
     text-align: center;
     place-items: center;
     margin: 50px;
-    background-color: #FFD500;
+    background-color: #f9f0cc;
     width: 700px;
 }
