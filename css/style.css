@@ -110,43 +110,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-.hero {
-    background-image: url('../media/hero.jpeg');
-    /* Adobe stock */
-    height: 500px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.hero-content h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    
-}
-
-.hero-content p {
-    margin-bottom: 30pxpx;
-}
-
-.hero-button {
-    padding: 10px 20px;
-    background-color: black;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.hero-button:hover {
-    background-color: #FFD500;
-}
-
 
 .text-block {
     flex: 1;
@@ -354,3 +317,64 @@ footer a:hover {
     background-color: #f9f0cc;
     width: 700px;
 }
+
+.info-section {
+    height: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .content {
+    max-width: 600px; /* Adjust as needed */
+
+  }
+  
+  /* Additional styling for smooth scroll and other elements */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
+  
+  main {
+    scroll-snap-type: y mandatory; 
+    overflow-y: scroll; 
+    height: 100vh; 
+  }
+  
+  .hero, .info-section {
+    scroll-snap-align: start; 
+    height: 850px; 
+    
+  }
+
+  .slideshow-container {
+    position: relative;
+    max-width: 1000px; /* Adjust as needed */
+    margin: auto;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .slide a img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* Add additional styling as needed */
+  
+  
