@@ -1,0 +1,90 @@
+body {
+  background-color: #fefdfe;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul, .header-content {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 70%; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+li {
+  float: left;
+}
+
+nav a:hover {
+  color:rgb(36, 40, 222);
+}
+
+li a {
+  display: block;
+  color: rgb(122, 193, 237);
+  text-align: center;
+  padding: 25px;
+  margin: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+.flexbox{
+  flex-direction: row-reverse;
+  flex-basis: auto;
+  justify-content: center;
+  min-width: 20em;
+  padding: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-right: 12em;
+  margin-left: 19em;;
+  text-align: center;
+  background-color: rgba(122, 193, 237, 0.2);
+  border-radius:20px;
+}
+
+.header-content img{
+  height: 90px;
+  padding: 10px ;
+}
+
+h1{
+  text-align: center;
+  padding: 1.4em;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: rgb(122, 193, 237);
+}
+
+h2 { /*vil ikke at h2 skal gå inn i oslomet-logo når man scaler ned*/
+  padding: 1px;
+  color: rgb(36, 40, 222);
+  letter-spacing: 5px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  color: rgb(36, 40, 222);
+}
+
+p, a{
+padding: 20px;
+line-height: 2;
+color: rgb(122, 193, 237);
+text-decoration: none;
+}
+
+.flexbox a:hover{
+color:rgb(36, 40, 222);
+}
+
+.flexbox a:active{
+  color:rgb(0, 1, 9);
+}
+
