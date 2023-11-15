@@ -1,6 +1,7 @@
 body {
   background-color: #fefdfe;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
 }
 
 ul, .header-content {
@@ -13,22 +14,22 @@ ul, .header-content {
   overflow: auto; /* Enable scrolling if the sidenav has too much content */
 }
 
+
 li {
   float: left;
 }
 
 nav a:hover {
-  color:rgb(36, 40, 222);
+  color:rgb(236, 47, 195);
 }
 
 li a {
   display: block;
-  color: rgb(122, 193, 237);
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 25px;
   margin: 15px;
   text-decoration: none;
-  text-transform: uppercase;
   letter-spacing: 2px;
 }
 
@@ -39,13 +40,17 @@ li a {
   justify-content: center;
   min-width: 20em;
   padding: 1em;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  margin-right: 12em;
-  margin-left: 19em;;
+  margin: 5px 8em 2em 22em;
   text-align: center;
-  background-color: rgba(122, 193, 237, 0.2);
   border-radius:20px;
+  border-style: solid;
+  border-color: rgb(244,213,180);
+}
+
+.bilde img{
+  height: 400px;
+  padding: 10px ;
+  border-width: 0;
 }
 
 .header-content img{
@@ -53,38 +58,61 @@ li a {
   padding: 10px ;
 }
 
-h1{
-  text-align: center;
-  padding: 1.4em;
+h1{ 
+  text-align:center;
   font-size: 3em;
-  text-transform: uppercase;
+  padding: 50px 50px 25px 50px;
+  font-weight: bold;
   letter-spacing: 5px;
-  color: rgb(122, 193, 237);
+  color: rgb(0, 0, 0);
+  margin-left: 5em;
 }
 
-h2 { /*vil ikke at h2 skal gå inn i oslomet-logo når man scaler ned*/
-  padding: 1px;
-  color: rgb(36, 40, 222);
-  letter-spacing: 5px;
+.hudpleie-bilde img{
+  margin: 2px 0px 0px 22em;
+  height:200px;
+  width: 400px;
+  padding: 15px;
 }
+
+h2 { 
+  padding: 5px 5px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
 
 h3 {
+  padding: 15px 0 15px 0;
+  text-align: center;
   letter-spacing: 5px;
-  color: rgb(36, 40, 222);
+  text-decoration: underline;
+  min-width: 200px;
 }
 
-p, a{
-padding: 20px;
+p, .flexbox a{
+padding: 20px 100px;
+text-align: center;
 line-height: 2;
-color: rgb(122, 193, 237);
-text-decoration: none;
+color: rgb(0, 0, 0);
 }
 
 .flexbox a:hover{
-color:rgb(36, 40, 222);
+color:rgb(244,213,180);
 }
 
 .flexbox a:active{
-  color:rgb(0, 1, 9);
+  color:rgb(62, 37, 229);
 }
+
+footer{
+  text-align: center;
+}
+
+h2, h3, p, .flexbox a{
+  min-width: 50%;
+}
+
 
