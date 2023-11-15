@@ -307,8 +307,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-<<<<<<< Updated upstream
-=======
 @media screen and (max-width: 768px) {
   /* Adjust navigation */
   nav ul {
@@ -377,7 +375,6 @@ footer a:hover {
 }
 
 /* Idk whats happening after this */
->>>>>>> Stashed changes
 
 .text-block {
     flex: 1;
