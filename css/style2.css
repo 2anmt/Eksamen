@@ -9,9 +9,9 @@ ul, .header-content {
   margin: 0;
   padding: 0;
   width: 300px;
-  height: 70%; /* Full height */
-  position: fixed; /* Make it stick, even on scroll */
-  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+  height: 70%; /* Full høyde */
+  position: fixed; /* Får navbar til å være fast (ved scrolling) */
+  overflow: auto; /* Scrolling hvis det er mye innhold */
 }
 
 
@@ -20,7 +20,7 @@ li {
 }
 
 nav a:hover {
-  color:rgb(236, 47, 195);
+  color:rgb(244,213,180);
 }
 
 li a {
@@ -33,6 +33,18 @@ li a {
   letter-spacing: 2px;
 }
 
+.center{
+  flex-direction: row-reverse;
+  flex-basis: auto;
+  justify-content: center;
+  min-width: 20em;
+  padding: 1em;
+  margin: 5px 8em 2em 22em;
+  text-align: center;
+  border-radius:20px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+}
 
 .flexbox{
   flex-direction: row-reverse;
@@ -47,10 +59,15 @@ li a {
   border-color: rgb(244,213,180);
 }
 
-.bilde img{
-  height: 400px;
-  padding: 10px ;
-  border-width: 0;
+.flexbox-center {
+  flex-direction: row-reverse;
+  flex-basis: auto;
+  justify-content: center;
+  min-width: 20px;
+  padding: 1em;
+  margin: 0px 8em 2em 22em;
+  text-align: center;
+  border-style: none;
 }
 
 .header-content img{
@@ -60,19 +77,18 @@ li a {
 
 h1{ 
   text-align:center;
-  font-size: 3em;
-  padding: 50px 50px 25px 50px;
+  font-size: 5em;
+  padding: 40px 40px 15px 40px;
   font-weight: bold;
   letter-spacing: 5px;
   color: rgb(0, 0, 0);
-  margin-left: 5em;
+  margin-left: 2em;
 }
 
 .hudpleie-bilde img{
-  margin: 2px 0px 0px 22em;
-  height:200px;
-  width: 400px;
-  padding: 15px;
+  height:20em;
+  width: 30px;
+  padding: 10px;
 }
 
 h2 { 
@@ -92,11 +108,20 @@ h3 {
   min-width: 200px;
 }
 
-p, .flexbox a{
+p {
 padding: 20px 100px;
 text-align: center;
 line-height: 2;
 color: rgb(0, 0, 0);
+font-size: 20px;
+}
+
+.flexbox a{
+  padding: 20px ;
+  text-align: center;
+  line-height: 2;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
 }
 
 .flexbox a:hover{
@@ -112,7 +137,7 @@ footer{
 }
 
 h2, h3, p, .flexbox a{
-  min-width: 50%;
+  min-width: 200px;
 }
 
 
