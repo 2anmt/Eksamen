@@ -429,6 +429,9 @@ footer a:hover {
   .button_col {
     font-size: 14px;
     width: 100%;
+    align-items: center;
+    justify-content: center;
+    display:flex;
   }
 
   .banner_heading h2 {
