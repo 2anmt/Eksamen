@@ -24,10 +24,20 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* Setting the default font for the body */
 body {
   font-family: "Roboto", sans-serif;
 }
+
+
+main {
+}
+
 
 /* Header */
 header {
@@ -114,6 +124,18 @@ nav a:hover::before {
 .hero_image_col {
   width: 70%;
   text-align: right;
+  animation: fadeInRight 2s ease-out forwards;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px); /* Adjust as needed */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .hero_content_col {
@@ -123,6 +145,18 @@ nav a:hover::before {
 .hero_content {
   max-width: 450px;
   margin-left: auto;
+  animation: fadeInLeft 2s ease-out forwards;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px); /* Adjust as needed */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .hero_content h1 {
@@ -233,22 +267,50 @@ nav a:hover::before {
 }
 
 .button_col {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 16.2px 135px 17.8px 135px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   display: inline-block;
-  color: #fff;
   text-align: center;
-  font-size: var(--font-size-medium);
-  font-style: italic;
-  font-weight: var(--font-weight-normal);
-  line-height: 36px;
-  letter-spacing: 0.5px;
-  transition: all 0.2s;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 2px solid white;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: white; 
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+  cursor: pointer; /
 }
 
-.button_col:hover {
-  background: var(--link-hover-color);
-  color: var(--primary-color);
+.button_col:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #ffffff; 
+  z-index: -1;
+}
+
+.button_col:hover, .button_col:focus {
+  color: black; /* Changing text color to black on hover */
+}
+
+.button_col:hover:before, .button_col:focus:before {
+  transition: 0.8s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.button_col:active {
+  transform: scale(0.9);
 }
 
 /* Banner Section */
@@ -583,7 +645,7 @@ footer a:hover {
     display:grid;
     text-align: center;
     place-items: center;
-    margin: 50px;
+    margin: 50px auto;
     background-color: #f9f0cc;
     width: 700px;
 }
@@ -599,19 +661,6 @@ footer a:hover {
   .content {
     max-width: 600px;
 
-  }
-  
- 
-  html {
-    scroll-behavior: smooth;
-  }
-  
-
-  
-  main {
-    scroll-snap-type: y mandatory; 
-    overflow-y: scroll; 
-    height: 100vh; 
   }
   
   .hero, .info-section {
