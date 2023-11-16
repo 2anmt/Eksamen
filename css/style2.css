@@ -128,3 +128,48 @@ h1, h2, h3, p, .flexbox a{
   min-width: 200px;
 }
 
+/* Responsive Media Query for screens up to 768px wide */
+@media screen and (max-width: 768px) {
+  .header-content, ul {
+    width: 100%; /* Full width on small screens */
+    position: relative; 
+  }
+
+  .flexbox, .flexbox-center {
+    margin: 5px; 
+    max-width: 100%; /* Full width on small screens */
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  h1 {
+    font-size: 2.5em; /* Smaller font size for h1 */
+    padding: 20px 20px 10px 20px; /* Adjusted padding */
+    margin-left: 1em; /* Adjusted margin */
+  }
+
+  h2 {
+    font-size: 1.5em; /* Smaller font size for h2 */
+    padding: 5px; /* Adjusted padding */
+  }
+
+  h3 {
+    font-size: 1.2em; /* Smaller font size for h3 */
+    padding: 10px 0; /* Adjusted padding */
+  }
+
+  p, .flexbox a {
+    font-size: 1em; /* Smaller font size for paragraph and links */
+    padding: 10px; /* Reduced padding */
+    line-height: 1.5; /* Adjusted line height for better readability */
+  }
+
+  li {
+    float: none; /* Stack nav items */
+    width: 100%; /* Full width nav items */
+  }
+
+  .flexbox-center img, .header-content img {
+    width: 100%; /* Full width images */
+    height: auto; /* Maintain aspect ratio */
+  }
+}

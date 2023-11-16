@@ -346,7 +346,7 @@ footer a:hover {
   }
   .sub_col,
   .footer_column {
-    width: 100% !important;
+    width: 100%;
   }
   .banner_heading {
     padding: 15px;
@@ -366,7 +366,7 @@ footer a:hover {
 
   .button_col {
     font-size: 14px;
-    width: 70px;
+    width: 100%;
   }
 
   .banner_heading h2 {
