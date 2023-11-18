@@ -65,13 +65,12 @@ li a {
   letter-spacing: 2px;
 }
 
-.flexbox{
-  margin: 10px;
-  padding: 20px;
+.flexbox-h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
   text-align: center;
-  border-radius:20px;
-  border-style: solid;
-  border-color: var(--border-color);
 }
 
 .flexbox-center {
@@ -93,6 +92,14 @@ li a {
   transform: scale(1.2); 
 }
 
+.flexbox{
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  border-radius:20px;
+  border-style: solid;
+  border-color: var(--border-color);
+}
 
 h1{ 
   text-align: center;
@@ -161,6 +168,10 @@ footer{
   .header-content, ul {
     width: 100%; /* Full width on small screens */
     position: relative; 
+  }
+  main{
+    width: 100%;
+    margin: 0 auto;
   }
 
   .flexbox, .flexbox-center {
