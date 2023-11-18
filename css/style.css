@@ -14,8 +14,9 @@
   --font-weight-normal: 400;
   --font-weight-bold: 500;
   --link-hover-color: #ead3c1;
-  --header-background: #ffd500;
+  --header-background: #bc808b;
   --button-background: #bc808b;
+  --footer-background: #bc808b;
 }
 
 /* Resetting default margin and padding for all elements */
@@ -33,11 +34,6 @@ html {
 body {
   font-family: "Roboto", sans-serif;
 }
-
-
-main {
-}
-
 
 /* Header */
 header {
@@ -130,7 +126,7 @@ nav a:hover::before {
 @keyframes fadeInRight {
   from {
     opacity: 0;
-    transform: translateX(50px); /* Adjust as needed */
+    transform: translateX(50px);
   }
   to {
     opacity: 1;
@@ -151,7 +147,7 @@ nav a:hover::before {
 @keyframes fadeInLeft {
   from {
     opacity: 0;
-    transform: translateX(-50px); /* Adjust as needed */
+    transform: translateX(-50px); 
   }
   to {
     opacity: 1;
@@ -316,6 +312,7 @@ nav a:hover::before {
 /* Banner Section */
 .banner_row {
   display: flex;
+  overflow: hidden;
 }
 
 .banner_heading {
@@ -347,28 +344,68 @@ nav a:hover::before {
   line-height: 60px;
 }
 
-/* Footer */
-footer {
-  background-color: var(--background-color);
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  position: relative;
-  bottom: 0;
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--footer-background);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.footer-content, .footer-map {
+  flex: 1; /* Each column takes up equal space */
+}
+
+.footer-content {
+  /* Styles for your footer content */
+  padding-right: 20px; /* Space between content and map */
+}
+
+.footer-map iframe {
   width: 100%;
-  margin-top: auto;
+  height: 300px; /* Adjust height as needed */
+  border: none;
 }
 
-footer a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 5px;
+.footer-content h2, .footer-content h3{
+  color: var(--primary-color);
+  margin-bottom: 10px;
 }
 
-footer a:hover {
+.footer-content p{
+  margin-bottom: 10px;
+}
+
+.footer-content ul {
+  list-style-type: none; 
+  padding: 0;
+}
+
+.footer-content ul li {
+  margin-bottom: 5px; 
+}
+
+.footer-content ul li a {
+  color: var(--primary-color);
+  text-decoration: none; 
+}
+
+.footer-content ul li a:hover {
   text-decoration: underline;
 }
 
+.footer-content a {
+  color:var(--primary-color); 
+  text-decoration: none; 
+  font-weight: bold; 
+}
+
+.footer-content a:hover {
+  text-decoration: underline; 
+  color: #003366; 
+}
+
+/* Responsive adjustments */
 @media screen and (max-width: 768px) {
   /* Adjust navigation */
   nav ul {
@@ -437,7 +474,15 @@ footer a:hover {
   .banner_heading h2 {
     font-size: var(--font-size-small);
   }
+
+  .footer-container {
+    flex-direction: column;
 }
+.footer-content {
+    margin-bottom: 20px;
+}
+}
+
 
 /* Idk whats happening after this */
 
@@ -461,7 +506,7 @@ footer a:hover {
     font-size: 1.2rem;
 }
 
-/*Katine*/
+/*Kantine*/
 
 .kantine{
     background-image: url('../media/dininghall.jpeg');
@@ -525,7 +570,7 @@ footer a:hover {
     font-size: 2em;
 }
 
-.spisesteder h2, h3 {
+.spisesteder h2{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-indent: 50px;
     text-align: center;
@@ -536,7 +581,7 @@ footer a:hover {
     padding-left : 10em;
     padding-right: 10em;
     padding-top: 2.5em;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: 1.5em;
     text-align: center;
     line-height: 30px;
@@ -546,7 +591,7 @@ footer a:hover {
     padding-left : 13em;
     padding-right: 13em;
     padding-top: 2.5em;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
 
@@ -652,67 +697,3 @@ footer a:hover {
     background-color: #f9f0cc;
     width: 700px;
 }
-
-.info-section {
-    height: 850px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .content {
-    max-width: 600px;
-
-  }
-  
-  .hero, .info-section {
-    scroll-snap-align: start; 
-    height: 850px; 
-    
-  }
-
-  .slideshow-container {
-    position: relative;
-    max-width: 100%;
-    height: 850px;
-    margin: auto;
-    overflow: hidden;
-  }
-  
-  .slide {
-    display: block;
-    opacity: 0;
-    width: 100%;
-    height: 850px; 
-    position: absolute;
-    top: 0; 
-    left: 0; 
-    animation: slideAnimation 12s infinite;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  
-  /* Define the keyframes for the animation */
-  @keyframes slideAnimation {
-    0% { opacity: 0; }
-    8% { opacity: 1; }
-    33% { opacity: 1; }
-    41% { opacity: 0; }
-    100% { opacity: 0; }
-  }
-  
-  /* Specific timing for each slide */
-  .slide:nth-of-type(1) {
-    animation-delay: 0s;
-  }
-  
-  .slide:nth-of-type(2) {
-    animation-delay: 4s; /* Starts after the first slide */
-  }
-  
-  .slide:nth-of-type(3) {
-    animation-delay: 8s; /* Starts after the second slide */
-  }
-  
