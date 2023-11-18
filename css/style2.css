@@ -75,16 +75,24 @@ li a {
 }
 
 .flexbox-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 5px;
   text-align: center;
 }
 
-.flexbox-center img{
-  height:170px;
+.flexbox-center img {
+  height: 170px;
   width: 250px;
   padding: 10px;
-  align-items: center;
+  transition: all 0.3s ease;
 }
+
+.flexbox-center img:hover {
+  transform: scale(1.2); 
+}
+
 
 h1{ 
   text-align: center;
