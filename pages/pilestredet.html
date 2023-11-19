@@ -1,32 +1,44 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<head>
+  <!-- Head of the document: Contains meta, title, and link to CSS -->
+  <head>
     <meta charset="utf-8" />
-    <title>Pilestredet</title>
-    <link rel="icon" type="image-icon" href="/media/favicon.png">
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    <header>
-        <div class="header-content">
-            <a href="/">
-                <img src="../media/logo.png" alt="Websitelogo" class="logo">
-            </a>       
-                <!-- Navigation bar -->
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="../pages/accessibility.html">Accessibility</a></li>
-                    <li><a href="../pages/topical.html">Topical</a></li>
-                    <li><a href="../pages/pilestredet.html">Pilestredet</a></li>
-                    <li><a href="../pages/kantiner.html">Kantiner</a></li>
-                </ul>
-            </nav>
-        </div>
+    <!-- Meta for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OsloMet</title>
+    <!--Favicon icon-->
+    <link rel="icon" type="image-icon" href="/media/favicon.png" />
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  </head>
 
+  <!-- Body of the document: Contains all visible content -->
+  <body>
+    <!-- Header: Top part of the page -->
+    <header>
+      <div class="header-content">
+        <!-- Logo linking to the homepage -->
+        <a href="/">
+          <img src="../media/logo.png" alt="Websitelogo" class="logo" />
+        </a>
+        <!-- Toggle checkbox for mobile nav -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span><span></span><span></span>
+        </label>
+        <!-- Navigation bar -->
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="../pages/accessibility.html">Accessibility</a></li>
+            <li><a href="../pages/topical.html">Topical</a></li>
+            <li><a href="../pages/pilestredet.html">Pilestredet</a></li>
+            <li><a href="../pages/kantiner.html">Kantiner</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
         <main>
-        </header>
         <section class="pilestredet-hero">
             <div class="pilestredet-hero-content">
                 <h1>Pilestredet Campus</h1>

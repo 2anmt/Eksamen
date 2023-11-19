@@ -112,8 +112,6 @@ nav a:hover::before {
   display: none;
   cursor: pointer;
   position: fixed;
-  top: 10px;
-  right: 10px;
   z-index: 1000;
   width: 35px;
   height: 30px;
@@ -446,47 +444,60 @@ nav a:hover::before {
 @media screen and (max-width: 768px) {
 
   /* Adjust navigation */
-  nav ul {
+  .nav-toggle-label {
+    display: block; /* Make the hamburger icon visible */
+  }
+
+  nav {
+    display: none; /* Initially hide the menu */
+    flex-direction: column;
+    align-items: flex-start;
     position: absolute;
-    top: 60px; /* Adjust this value to align with the bottom of the header */
-    right: 0;
-    left: 0; /* Stretch the nav to full width of the header */
-    margin-right: 20px; /* Adjust to align with the right edge of the header */
-    margin-left: 20px; /* Adjust to align with the left edge of the header */
-    opacity: 1; /* Full opacity for readability */
-    background: var(--header-background);
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    overflow: hidden;
-    max-height: 0; /* Start with 0 height */
-    display: none;
-    list-style: none;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    top: 120px; /* Position right below the header */
+    background-color: var(--header-background);
+    width: 100%; /* Full width */
+    z-index: 10;
+  }
+ 
+  .nav-toggle-checkbox:checked + .nav-toggle-label + nav {
+    display: flex; /* Show the menu when checkbox is checked */
   }
 
   .nav-toggle-label {
-    display: block; 
+    position:absolute;
+    top: 50px;
+    right: 20px;
+  }
+
+  nav ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   nav ul li {
-    margin-top: 10px 0;
+    display: block; /* Stack the menu items vertically */
+    margin: 0;
+    padding: 10px 20px; /* Add some padding for touch targets */
+    border-bottom: 1px solid #ccc; /* Optional: add a separator between items */
   }
-  nav li {
-    opacity: 1; /* Full opacity */
-    /* Rest of the styles remain the same */
+
+  nav ul li:last-child {
+    border-bottom: none;
   }
 
   nav a {
-    color: var(--primary-color);
-    text-decoration: none;
+    display: block; /* Make links fill the entire list item area */
   }
 
-  .nav-toggle-checkbox:checked + .nav-toggle-label + nav ul {
-    max-height: 500px; /* Adjust as necessary for your content */
+  nav a:hover, nav a:focus {
+    color: var(--primary-color); 
   }
 
+  nav a::before {
+    background-color: transparent;
+    width: 0%; 
+  }
   .site_header {
     padding: 30px 0;
   }
