@@ -11,12 +11,12 @@
   --font-size-medium: 30px;
   --font-weight-normal: 400;
   --font-weight-bold: 500;
+  --text-transform: uppercase; 
 }
 
 body {
   background-color: (var(--background-color));
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-transform: uppercase;
 }
 
 ul, .header-content {
@@ -27,6 +27,7 @@ ul, .header-content {
   height: 70%; /* Full høyde */
   position: fixed; /* Får navbar til å være fast (ved scrolling) */
   overflow: auto; /* Scrolling hvis det er mye innhold */
+  text-transform: var(--text-transform);
 }
 
 .header-content img{
@@ -71,6 +72,7 @@ li a {
   align-items: center;
   padding: 5px;
   text-align: center;
+  text-transform: var(--text-transform);
 }
 
 .flexbox-center {
@@ -108,6 +110,7 @@ h1{
   font-weight: bold;
   letter-spacing: 5px;
   color: var(--primary-color);
+  text-transform: var(--text-transform);
 }
 
 
@@ -118,7 +121,7 @@ h2 {
   text-align: center;
   color: var(--primary-color);
   letter-spacing: 5px;
-
+  text-transform: var(--text-transform);
 }
 
 
@@ -128,6 +131,7 @@ h3 {
   font-weight: var(--font-weight-normal);
   text-align: center;
   letter-spacing: 5px;
+  text-transform: var(--text-transform);
 }
 
 p {
