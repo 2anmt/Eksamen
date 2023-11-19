@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
   <!-- Head of the document: Contains meta, title, and link to CSS -->
   <head>
     <meta charset="utf-8" />
     <!-- Meta for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>OsloMet</title>
+    <title>OsloMet Home</title>
     <!--Favicon icon-->
-    <link rel="icon" type="image-icon" href="/media/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="/media/favicon.png" />
     <!-- Link to external CSS file -->
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
   </head>
@@ -22,7 +22,7 @@
           <img src="../media/logo.png" alt="Websitelogo" class="logo" />
         </a>
         <!-- Toggle checkbox for mobile nav -->
-        <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" />
         <label for="nav-toggle" class="nav-toggle-label">
           <span></span><span></span><span></span>
         </label>
@@ -60,13 +60,16 @@
                 <!-- Link with more information -->
                 <a href="../pages/pilestredet.html">
                   Les mer om campus
-                  <img src="../media/arrow-icon.png" />
+                  <img
+                    src="../media/arrow-icon.png"
+                    alt="Arrow for navigation"
+                  />
                 </a>
               </div>
             </div>
             <!-- Column for hero image -->
             <div class="hero_image_col">
-              <img src="media/logo.png" />
+              <img src="media/logo.png" alt="OsloMet Logo" />
             </div>
           </div>
         </div>
@@ -77,7 +80,7 @@
         <div class="row">
           <!-- Column for image -->
           <div class="image_column">
-            <img src="../media/dininghall.jpeg" />
+            <img src="../media/dininghall.jpg" alt="Oslomet kantine" />
           </div>
           <!-- Column for content -->
           <div class="content_column">
@@ -92,8 +95,8 @@
               </p>
               <!-- Button-like link for more information -->
               <a class="btn" href="../Eksamen/pages/kantiner.html">
-                Les mer
-                <img src="../media/arrow-icon.png" >
+                Les mer om kantiner
+                <img src="../media/arrow-icon.png" alt="Arrow for navigation" />
               </a>
             </div>
           </div>
@@ -120,39 +123,42 @@
       <section class="banner_section">
         <div class="banner_row">
           <div class="banner_heading">
-            <h2>Overskrift</h2>
+            <h2>Kommende</h2>
           </div>
           <div class="banner_image">
-            <img src="../media/banner.png" />
+            <img src="../media/banner.jpg" alt="Banner bilde av OsloMet" />
           </div>
         </div>
       </section>
     </main>
-
-
     <!-- Footer -->
     <footer class="footer-container">
       <div class="footer-content">
         <h2>Oslo Metropolitan University (OsloMet)</h2>
-        <p>Phone: +47 00 00 00 00</p>
-        <p>Email: <a href="mailto: kulepost@oslomet.no">kulepost@oslomet.no</a></p>
-        
+        <p>Phone: <a href="tel:+4700000000">+47 00 00 00 00</a></p>
+
+        <p>
+          Email: <a href="mailto: kulepost@oslomet.no">kulepost@oslomet.no</a>
+        </p>
+
         <div>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="../pages/accessibility.html">Accessibility</a></li>
-                <li><a href="../pages/kantiner.html">Kantiner</a></li>
-                <li><a href="../pages/topical.html">Topical</a></li>
-                <li><a href="../pages/pilestrdet.html">Pilestredet</a></li>
-            </ul>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="../pages/accessibility.html">Accessibility</a></li>
+            <li><a href="../pages/kantiner.html">Kantiner</a></li>
+            <li><a href="../pages/topical.html">Topical</a></li>
+            <li><a href="../pages/pilestrdet.html">Pilestredet</a></li>
+          </ul>
         </div>
       </div>
       <div class="footer-map">
-          <!-- Google Map Embed -->
-          <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.7621990310756!2d10.732838212337033!3d59.91949386353756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7bfd89e6cf%3A0xd04027fb4528a60c!2sELLEN%20GLEDITSCHS%20HUS%2C%20Pilestredet%2035%2C%200166%20Oslo!5e0!3m2!1sno!2sno!4v1700305811867!5m2!1sno!2sno" >
-          </iframe>
+        <!-- Google Map Embed -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.7621990310756!2d10.732838212337033!3d59.91949386353756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7bfd89e6cf%3A0xd04027fb4528a60c!2sELLEN%20GLEDITSCHS%20HUS%2C%20Pilestredet%2035%2C%200166%20Oslo!5e0!3m2!1sno!2sno!4v1700305811867!5m2!1sno!2sno"
+          title="Google Map link for Pilestredet"
+        >
+        </iframe>
       </div>
-  </footer>
+    </footer>
   </body>
 </html>
