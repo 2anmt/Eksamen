@@ -479,6 +479,11 @@ nav a:hover::before {
   color: rgb(255, 255, 255);
 }
 
+.kantine-pin {
+  max-width: 20px;
+  max-height: 40px; 
+}
+
 .spisesteder h2,
 .spisesteder h3 {
   padding-top: 10px;
