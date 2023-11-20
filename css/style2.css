@@ -12,11 +12,104 @@
   --font-weight-normal: 400;
   --font-weight-bold: 500;
   --text-transform: uppercase; 
+  --primary-color: #041e42;
+  --secondary-color: #4a4a4a;
+  --accent-color: #fff3f7;
+  --hover-color: #fafafa;
+  --background-color: #333;
+  --font-size-large: 36px;
+  --font-size-medium: 20px;
+  --font-size-small: 16px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 500;
+  --link-hover-color: #ead3c1;
+  --header-background: #bc808b;
+  --button-background: #bc808b;
+  --footer-background: #bc808b;
+  --gridbox-background: #f9f0cc;
 }
 
 body {
   background-color: (var(--background-color));
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--footer-background);
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.footer-content,
+.footer-map {
+  flex: 1;
+}
+
+.footer-content {
+  padding-right: 20px;
+}
+
+.footer-map iframe {
+  width: 90%;
+  height: 300px;
+  border: none;
+}
+
+.footer-content h2,
+.footer-content h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  display: inline;
+  margin-bottom: 10px;
+  line-height: 3;
+}
+
+.footer-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-content ul li {
+  margin-bottom: 5px;
+}
+
+.footer-content ul li a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-content a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+  color: #003366;
+}
+
+#email-p {
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+#phone-p {
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 ul, .header-content {
@@ -161,11 +254,6 @@ font-size: var(--font-size-small);
 .flexbox a:visited {
   color:var(--hover-visited);
 }
-
-footer{
-  text-align: center;
-}
-
 
 /* Responsive Media Query for screens up to 768px wide */
 @media screen and (max-width: 768px) {
