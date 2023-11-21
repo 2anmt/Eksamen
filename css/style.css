@@ -490,8 +490,9 @@ nav a:hover::before {
 
 .spisesteder p {
   text-align: center;
-  padding: 25px;
+  padding: 2%;
   text-align: center;
+  line-height: 2;
 }
 
 .spisesteder img {
@@ -544,7 +545,8 @@ nav a:hover::before {
 
 .bygninger p {
   text-align: center;
-  padding: 25px;
+  padding: 2%;
+  line-height: 2;
 }
 
 .bygninger img {
@@ -589,7 +591,12 @@ nav a:hover::before {
 
 .accessibility-text p {
   text-align: center;
-  padding: 25px;
+  padding: 2%;
+  line-height: 2;
+}
+
+.accessibility-text p, .accessibility-text strong{
+  line-height: 2;
 }
 
 .accessibility-text ul {
