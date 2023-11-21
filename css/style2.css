@@ -162,9 +162,6 @@ font-size: var(--font-size-small);
   color:var(--hover-visited);
 }
 
-footer{
-  text-align: center;
-}
 
 
 /* Responsive Media Query for screens up to 768px wide */
