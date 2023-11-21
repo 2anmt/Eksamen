@@ -3,21 +3,104 @@
   --secondary-color: #4a4a4a;
   --accent-color: #fff3f7;
   --hover-color: #f4d5b4;
-  --hover-active: #1529f3;
-  --hover-visited: #9a01c7;
-  --background-color: #fefdfe;
+
+  --hover-active: #1529F3; 
+  --hover-visited: #9A01C7;
+  --background-color: #ffffff;
+
   --border-color: #f4d5b4;
   --font-size-large: 40px;
   --font-size-medium: 30px;
   --font-weight-normal: 400;
   --font-weight-bold: 500;
-  --text-transform: uppercase;
+
+  --text-transform: uppercase; 
+  --hover-color: #fafafa;
+
 }
 
 body {
   background-color: var(--background-color);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+  
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.footer-content,
+.footer-map {
+  flex: 1;
+}
+
+.footer-content {
+  padding-right: 20px;
+}
+
+.footer-map iframe {
+  width: 90%;
+  height: 300px;
+  border: none;
+}
+
+.footer-content h2,
+.footer-content h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  display: inline;
+  margin-bottom: 10px;
+  line-height: 3;
+}
+
+.footer-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-content ul li {
+  margin-bottom: 5px;
+}
+
+.footer-content ul li a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-content a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+  color: #003366;
+}
+
+#email-p {
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+#phone-p {
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 ul,
@@ -157,7 +240,7 @@ p {
 }
 
 .flexbox a:visited {
-  color: var(--hover-visited);
+  color:var(--hover-visited);
 }
 
 /* Responsive Media Query for screens up to 768px wide */
