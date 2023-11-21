@@ -1,23 +1,28 @@
-:root{
+:root {
   --primary-color: #000000;
   --secondary-color: #4a4a4a;
   --accent-color: #fff3f7;
   --hover-color: #f4d5b4;
+
   --hover-active: #1529F3; 
   --hover-visited: #9A01C7;
   --background-color: #ffffff;
+
   --border-color: #f4d5b4;
   --font-size-large: 40px;
   --font-size-medium: 30px;
   --font-weight-normal: 400;
   --font-weight-bold: 500;
+
   --text-transform: uppercase; 
   --hover-color: #fafafa;
+
 }
 
 body {
-  background-color: (var(--background-color));
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
   
 .footer-container {
@@ -98,7 +103,8 @@ body {
   text-align: center;
 }
 
-ul, .header-content {
+ul,
+.header-content {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -109,13 +115,12 @@ ul, .header-content {
   text-transform: var(--text-transform);
 }
 
-.header-content img{
+.header-content img {
   height: 100px;
   padding: 10px 0;
 }
 
-
-main{
+main {
   margin-left: 20%;
   flex-direction: row-reverse;
   flex-basis: auto;
@@ -126,13 +131,12 @@ main{
   text-align: center;
 }
 
-
 li {
   float: left;
 }
 
 a:hover {
-  color:var(--hover-color);
+  color: var(--hover-color);
 }
 
 li a {
@@ -145,7 +149,7 @@ li a {
   letter-spacing: 2px;
 }
 
-.flexbox-h1{
+.flexbox-h1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,19 +174,19 @@ li a {
 }
 
 .flexbox-center img:hover {
-  transform: scale(1.2); 
+  transform: scale(1.2);
 }
 
-.flexbox{
+.flexbox {
   margin: 10px;
   padding: 20px;
   text-align: center;
-  border-radius:20px;
+  border-radius: 20px;
   border-style: solid;
   border-color: var(--border-color);
 }
 
-h1{ 
+h1 {
   text-align: center;
   font-size: 80px;
   padding: 30px;
@@ -192,17 +196,15 @@ h1{
   text-transform: var(--text-transform);
 }
 
-
-h2 { 
+h2 {
   padding: 5px 5px;
-  font-size: var(--font-size-large);  
+  font-size: var(--font-size-large);
   font-weight: var(--font-weight-bold);
   text-align: center;
   color: var(--primary-color);
   letter-spacing: 5px;
   text-transform: var(--text-transform);
 }
-
 
 h3 {
   padding: 5px 5px;
@@ -214,14 +216,14 @@ h3 {
 }
 
 p {
-padding: 20px 100px;
-text-align: center;
-line-height: 2;
-color: var(--primary-color);
-font-size: var(--font-size-small);
+  padding: 20px 100px;
+  text-align: center;
+  line-height: 2;
+  color: var(--primary-color);
+  font-size: var(--font-size-small);
 }
 
-  .flexbox a {
+.flexbox a {
   text-align: center;
   line-height: 2;
   color: var(--primary-color);
@@ -234,7 +236,7 @@ font-size: var(--font-size-small);
 }
 
 .flexbox a:active {
-  color:var(--hover-active);
+  color: var(--hover-active);
 }
 
 .flexbox a:visited {
@@ -243,17 +245,19 @@ font-size: var(--font-size-small);
 
 /* Responsive Media Query for screens up to 768px wide */
 @media screen and (max-width: 768px) {
-  .header-content, ul {
+  .header-content,
+  ul {
     width: 100%; /* Full width on small screens */
-    position: relative; 
+    position: relative;
   }
-  main{
+  main {
     width: 100%;
     margin: 0 auto;
   }
 
-  .flexbox, .flexbox-center {
-    margin: 5px; 
+  .flexbox,
+  .flexbox-center {
+    margin: 5px;
     max-width: 100%; /* Full width on small screens */
     flex-direction: column; /* Stack elements vertically */
   }
@@ -274,7 +278,8 @@ font-size: var(--font-size-small);
     padding: 10px 0; /* Adjusted padding */
   }
 
-  p, .flexbox a {
+  p,
+  .flexbox a {
     font-size: 1em; /* Smaller font size for paragraph and links */
     padding: 10px; /* Reduced padding */
     line-height: 1.5; /* Adjusted line height for better readability */
@@ -285,7 +290,8 @@ font-size: var(--font-size-small);
     width: 100%; /* Full width nav items */
   }
 
-  .flexbox-center img, .header-content img {
+  .flexbox-center img,
+  .header-content img {
     width: 100%; /* Full width images */
     height: auto; /* Maintain aspect ratio */
   }
