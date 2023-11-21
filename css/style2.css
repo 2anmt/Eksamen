@@ -5,28 +5,14 @@
   --hover-color: #f4d5b4;
   --hover-active: #1529F3; 
   --hover-visited: #9A01C7;
-  --background-color: #fefdfe;
+  --background-color: #ffffff;
   --border-color: #f4d5b4;
   --font-size-large: 40px;
   --font-size-medium: 30px;
   --font-weight-normal: 400;
   --font-weight-bold: 500;
   --text-transform: uppercase; 
-  --primary-color: #041e42;
-  --secondary-color: #4a4a4a;
-  --accent-color: #fff3f7;
   --hover-color: #fafafa;
-  --background-color: #333;
-  --font-size-large: 36px;
-  --font-size-medium: 20px;
-  --font-size-small: 16px;
-  --font-weight-normal: 400;
-  --font-weight-bold: 500;
-  --link-hover-color: #ead3c1;
-  --header-background: #bc808b;
-  --button-background: #bc808b;
-  --footer-background: #bc808b;
-  --gridbox-background: #f9f0cc;
 }
 
 body {
@@ -37,7 +23,7 @@ body {
 .footer-container {
   display: flex;
   justify-content: space-between;
-  background-color: var(--footer-background);
+  background-color: var(--background-color);
   padding: 30px;
   box-sizing: border-box;
 }
