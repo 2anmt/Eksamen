@@ -442,9 +442,9 @@ nav a:hover::before {
 }
 
 /*Kantine*/
-/*Photo Credit: TODO */
+/*Photo Credit: ©interiorphoto / Adobe Stock */
 .kantine-hero {
-  background-image: url("../media/dininghall.jpg");
+  background-image: url("../media/dininghall.jpeg");
   opacity: 0.8;
   height: 400px;
   width: 100%;
@@ -501,7 +501,7 @@ nav a:hover::before {
 }
 
 /*Pilestredet*/
-/* Photo Credit: TODO */
+/* Photo Credit: ©OsloMet / OsloMet */
 .pilestredet-hero {
   background-image: url("../media/campus.jpg");
   opacity: 0.8;
@@ -568,8 +568,9 @@ nav a:hover::before {
 }
 
 /*Accessibility */
+/* Photo Credit: ©momius / Adobe Stock */
 .accessibility-hero {
-  background-image: url("../media/campus.jpg");
+  background-image: url("../media/accessibility.jpeg");
   opacity: 0.8;
   height: 400px;
   width: 100%;
@@ -601,15 +602,21 @@ nav a:hover::before {
   justify-content: center;
   padding-bottom: 50px;
 }
+
 .accessibility-gallery img {
-  width: 100%; /* Full width on smaller screens */
-  max-width: 500px; /* Adjust maximum width as needed */
-  height: auto; /* Maintains aspect ratio */
-  margin: 5px; /* Adjust spacing */
+  width: 100%;
+  /* Full width on smaller screens */
+  max-width: 500px;
+  /* Adjust maximum width as needed */
+  height: auto;
+  /* Maintains aspect ratio */
+  margin: 5px;
+  /* Adjust spacing */
 }
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
+
   /* Adjust navigation */
   .nav-toggle-label {
     display: block;
@@ -630,7 +637,7 @@ nav a:hover::before {
     z-index: 10;
   }
 
-  .nav-toggle-checkbox:checked + .nav-toggle-label + nav {
+  .nav-toggle-checkbox:checked+.nav-toggle-label+nav {
     display: flex;
     /* Show the menu when checkbox is checked */
   }
@@ -765,6 +772,7 @@ nav a:hover::before {
   .footer-content {
     margin-bottom: 20px;
   }
+
   .accessibility-gallery img {
     width: 100%;
     max-width: 300px;
@@ -772,6 +780,7 @@ nav a:hover::before {
     margin: 5px auto;
     display: block;
   }
+
   .accessibility-gallery {
     display: block;
     text-align: center;
