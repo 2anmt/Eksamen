@@ -150,18 +150,6 @@ nav a:hover::before {
   animation: fadeInRight 2s ease-out forwards;
 }
 
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 .hero_content_col {
   width: 30%;
 }
@@ -172,17 +160,36 @@ nav a:hover::before {
   animation: fadeInLeft 2s ease-out forwards;
 }
 
-@keyframes fadeInLeft {
+/* Keyframes for fadeInRight Animation */
+@keyframes fadeInRight {
+  /* Starting state of the animation */
   from {
-    opacity: 0;
-    transform: translateX(-50px);
+    opacity: 0;                   /* Element is fully transparent */
+    transform: translateX(50px);  
   }
 
+  /* Ending state of the animation */
   to {
-    opacity: 1;
-    transform: translateX(0);
+    opacity: 1;                   
+    transform: translateX(0);     
   }
 }
+
+/* Keyframes for fadeInLeft Animation */
+@keyframes fadeInLeft {
+  /* Starting state of the animation */
+  from {
+    opacity: 0;                   /* Element is fully transparent */
+    transform: translateX(-50px); 
+  }
+
+  /* Ending state of the animation */
+  to {
+    opacity: 1;                  
+    transform: translateX(0);     
+  }
+}
+
 
 .hero_content h1 {
   color: var(--primary-color);
@@ -343,102 +350,96 @@ nav a:hover::before {
 
 /* Banner Section */
 .banner_row {
-  display: flex;
-  overflow: hidden;
+  display: flex;                 
+  overflow: hidden;              /* Hides any overflowed content outside the banner */
 }
 
 .banner_heading {
-  width: 25%;
-  background: #000;
-  padding: 75px 0 0 112px;
+  width: 25%;                    
+  background: #000;            
+  padding: 75px 0 0 112px;       /* Specifies padding to position the heading text */
 }
 
 .banner_image {
-  width: 75%;
-  max-height: 1200px;
-  position: relative;
+  width: 75%;                    /* Allocates 75% of the container width to the banner image */
+  max-height: 1200px;            /* Sets a maximum height for the banner image */
+  position: relative;            /* Enables absolute positioning for pseudo-elements inside */
 }
 
 .banner_image::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
+  content: "";                   /* Necessary for the pseudo-element to display */
+  width: 100%;                   
+  height: 100%;                  
+  position: absolute;            /* Positions the pseudo-element over the banner image */
+  top: 0;                        /* Aligns the top edge with the parent's top edge */
   background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0) 100%);
-  left: 0;
+                                  /* Gradient overlay to create a fading effect on the image */
+  left: 0;                      
 }
 
 .banner_heading h2 {
-  color: #fff;
-  font-size: 40px;
-  font-style: italic;
+  color: #fff;                  
+  font-size: 40px;               
+  font-style: italic;            
   font-weight: var(--font-weight-normal);
-  line-height: 60px;
+  line-height: 60px;             /* Sets line height for better readability of the heading */
 }
 
+/* Footer Section */
 .footer-container {
-  display: flex;
-  justify-content: space-between;
+  display: flex;                 /* Enables flex layout for footer elements */
+  justify-content: space-between;/* Spaces out child elements evenly */
   background-color: var(--footer-background);
-  padding: 30px;
-  box-sizing: border-box;
+  padding: 30px;                 /* Padding around the entire footer */
+  box-sizing: border-box;        /* Ensures padding is included in width/height calculations */
 }
 
 .footer-content,
 .footer-map {
-  flex: 1;
+  flex: 1;             
 }
 
 .footer-content {
-  padding-right: 20px;
+  padding-right: 20px;           
 }
 
 .footer-map iframe {
-  width: 100%;
-  height: 300px;
-  border: none;
+  width: 100%;                   /* Full width of parent element for the map */
+  height: 300px;                 /* Fixed height for the map iframe */
+  border: none;                  /* Removes default border from iframe */
 }
 
+/* Footer Content Styles */
 .footer-content h2,
 .footer-content h3 {
-  color: var(--primary-color);
-  margin-bottom: 10px;
+  color: var(--primary-color);   
+  margin-bottom: 10px;           /* Margin below headings for spacing */
 }
 
 .footer-content p {
-  margin-bottom: 10px;
-  line-height: 3;
+  margin-bottom: 10px;          
+  line-height: 3;               
 }
 
 .footer-content ul {
-  list-style-type: none;
-  padding: 0;
+  list-style-type: none;         /* Removes bullet points from list items */
+  padding: 0;                    /* Removes default padding from the list */
 }
 
 .footer-content ul li {
-  margin-bottom: 5px;
-  text-decoration: underline;
+  margin-bottom: 5px;           
+  text-decoration: underline;    /* Underlines list items for emphasis */
 }
 
 .footer-content ul li a {
-  color: var(--primary-color);
-  text-decoration: none;
+  color: var(--primary-color);   
+  text-decoration: none;         /* Removes underline from links */
 }
 
-.footer-content ul li a:hover {
-  text-decoration: underline;
-}
-
-.footer-content a {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: bold;
-}
-
+.footer-content ul li a:hover,
 .footer-content a:hover {
-  text-decoration: underline;
-  color: #003366;
+  text-decoration: underline;    /* Adds underline to links on hover for interaction feedback */
+  color: #003366;              
 }
 
 /*Kantine*/
