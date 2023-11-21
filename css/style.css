@@ -486,18 +486,19 @@ nav a:hover::before {
 .spisesteder h3 {
   padding-top: 10px;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .spisesteder p {
   text-align: center;
-  padding: 25px;
-  text-align: center;
+  line-height: 1.5;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .spisesteder img {
   height: 200px;
   width: 300px;
-  padding-bottom: 20px;
 }
 
 /*Pilestredet*/
@@ -540,11 +541,14 @@ nav a:hover::before {
 .bygninger h3 {
   padding-top: 10px;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .bygninger p {
   text-align: center;
-  padding: 25px;
+  padding-left: 10%;
+  padding-right: 10%;
+  line-height: 1.5;
 }
 
 .bygninger img {
@@ -585,16 +589,22 @@ nav a:hover::before {
 .accessibility-text h2,
 .accessibility-text h3 {
   padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
 }
 
 .accessibility-text p {
   text-align: center;
-  padding: 25px;
+  padding-left: 10%;
+  padding-right: 10%;
+  line-height: 1.5;
 }
 
 .accessibility-text ul {
   list-style-type: none;
+  padding-left: 10%;
+  padding-right: 10%;
+  line-height: 1.5;
 }
 
 .accessibility-gallery {
